@@ -198,6 +198,12 @@
  
     // 繰り返し実行する処理
     function timer(){  
+      if (active == ture){
+        var currentTime = new Date();
+        var time = (currentTime - startTime)/1000;
+        $("#time").html("経過時間:"+parseInt(time));
+
+      }
         
         
     } 
