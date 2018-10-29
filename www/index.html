@@ -178,10 +178,15 @@
       var canvas = $("#mycanvas")[0];
       var ctx = canvas.getContext("2d");
       var img = new Image();
+      var audio = new Audio();
+      audio.src = "pin.wav";
+      audio.play();
       img.src = "ksuisbg.gif";
       img.onload = function(){
         ctx.drawImage(img,0,0,300,300);
+
       }
+
         
         
     }
