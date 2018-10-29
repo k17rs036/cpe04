@@ -187,6 +187,10 @@
       var audio = new Audio();
       audio.src = "pin.wav";
       audio.play();
+      active = false;
+      period = 60*parseInt($("#minute").val())+parseInt($("#second").val());
+      $("#remain").html("残り時間:"+period);
+      $("#time").html("経過時間: 0");
       img.src = "ksuisbg.gif";
       img.onload = function(){
         ctx.drawImage(img,0,0,300,300);
